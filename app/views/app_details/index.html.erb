@@ -1,0 +1,32 @@
+<h1>Listing app_details</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Redirect url</th>
+      <th>Client</th>
+      <th>Secret code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @app_details.each do |app_detail| %>
+      <tr>
+        <td><%= app_detail.name %></td>
+        <td><%= app_detail.redirect_url %></td>
+        <td><%= app_detail.client_id %></td>
+        <td><%= app_detail.app_secret %></td>
+        <td><%= link_to 'Show', app_detail %></td>
+        <td><%= link_to 'Destroy', app_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New App detail', new_app_detail_path %>

@@ -1,0 +1,2 @@
+# Restart the application.
+touch tmp/restart.txt

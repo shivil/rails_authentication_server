@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @app_detail.name %>
+</p>
+
+<p>
+  <strong>Redirect url:</strong>
+  <%= @app_detail.redirect_url %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @app_detail.client_id %>
+</p>
+
+<p>
+  <strong>App code:</strong>
+  <%= @app_detail.app_secret %>
+</p>
+
+<%= link_to 'Back', app_details_path %>

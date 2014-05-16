@@ -1,0 +1,10 @@
+version: "1.0"
+
+servers:
+  some-server:
+    deployment_path: "/home/mobme/deploy/application-name" # Change this folder name!
+    shared:
+      - vendor/bundle/
+      - tmp/
+      - log/
+      # Add more shared stuff here.

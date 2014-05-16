@@ -1,0 +1,10 @@
+vendor/bundle/
+.bundle/
+/coverage
+*.log
+.yardoc
+/yardoc
+/db/*.sqlite3-journal
+/log/*.log
+/tmp
+*~
